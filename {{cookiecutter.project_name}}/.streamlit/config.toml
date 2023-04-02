@@ -1,0 +1,12 @@
+[browser]
+    gatherUsageStats = false
+
+[theme]
+    font="arial"
+
+
+[logger]
+    level = "error"
+
+[server]
+    address = "0.0.0.0"

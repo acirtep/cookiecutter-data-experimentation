@@ -1,0 +1,20 @@
+version: '3.2'
+
+services:
+  {{ cookiecutter.docker_service_name }}:
+    container_name: {{ cookiecutter.docker_container_name }}
+    restart: on-failure
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - ./{{cookiecutter.project_slug}}:/app/{{cookiecutter.project_slug}}
+      - ./data:/app/data
+    ports:
+      - "{{cookiecutter.streamlit_port_no}}:8501"
+    command:
+      - bash
+      - -c
+      - streamlit run ./{{cookiecutter.project_slug}}/app.py

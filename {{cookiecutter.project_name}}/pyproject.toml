@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "{{cookiecutter.project_slug}}"
+version = "0.0.1"
+description = "{{cookiecutter.project_description}}"
+authors = ["{{cookiecutter.author}} <f{{cookiecutter.email}}>"]
+readme = "README.md"
+packages = [
+  {include = "{{cookiecutter.project_slug}}"}
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+streamlit = "^1.20.0"
+plotly = "^5.14.0"
+duckdb = "^0.7.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.8.0"
+black = "^23.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "cookiecutter-data-experimentation"
+version = "0.1.0"
+description = "Cookiecutter for easy data experimentation with streamlit, plotly and duckdb"
+authors = ["acirtep <acirtep>"]
+readme = "README.md"
+packages = [{include = "cookiecutter_data_experimentation"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+cookiecutter = "^2.1.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
