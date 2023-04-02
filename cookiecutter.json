@@ -7,5 +7,5 @@
   "project_slug": "",
   "docker_service_name": "{{cookiecutter.project_slug}}_service",
   "docker_container_name": "{{cookiecutter.project_slug}}_container",
-  "streamlit_port_no": ""
+  "streamlit_port_no": "8501"
 }

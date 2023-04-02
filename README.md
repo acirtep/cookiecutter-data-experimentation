@@ -28,7 +28,6 @@ Graphing library, with better graphs than streamlit: https://plotly.com/python/
 ## duckdb
 In-memory OLAP database: https://duckdb.org/docs/
 
-
 # Acknowledgements
 This cookiecutter is inspired from https://github.com/fpgmaas/cookiecutter-poetry .
 
