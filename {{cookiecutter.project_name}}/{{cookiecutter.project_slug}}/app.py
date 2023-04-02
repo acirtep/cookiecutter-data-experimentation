@@ -2,9 +2,11 @@ import streamlit as st
 import duckdb
 import plotly.express as px
 
+from {{cookiecutter.project_slug}}.settings import DATA_LOCATION
 
-def get_data(duckdb_conn):
-    df = duckdb_conn.read_csv("/app/data/example_data.csv").df()
+
+def get_data(duckdb_conn, file):
+    df = duckdb_conn.read_csv(file).df()
     return df
 
 
@@ -16,7 +18,7 @@ def get_bar_graph(df):
 if __name__ == "__main__":
     st.title("Hello world!")
     session_duckdb_conn = duckdb.connect()
-    df_data = get_data(duckdb_conn=session_duckdb_conn)
+    df_data = get_data(duckdb_conn=session_duckdb_conn, file=f"{DATA_LOCATION}/example_data.csv")
     st.text("Some example data")
     st.dataframe(df_data)
     px_fig = get_bar_graph(df=df_data)
