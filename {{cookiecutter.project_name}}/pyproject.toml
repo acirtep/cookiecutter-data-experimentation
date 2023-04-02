@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "{{cookiecutter.project_slug}}"
-version = "0.0.1"
+version = "0.1.0"
 description = "{{cookiecutter.project_description}}"
 authors = ["{{cookiecutter.author}} <f{{cookiecutter.email}}>"]
 readme = "README.md"
@@ -19,7 +19,13 @@ duckdb = "^0.7.1"
 [tool.poetry.group.dev.dependencies]
 ipython = "^8.8.0"
 black = "^23.3.0"
+pre-commit = "^3.0.0"
+commitizen = "^2.40.0"
 
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.0.1"
+tag_format = "$version"
 
 [build-system]
 requires = ["poetry-core"]
