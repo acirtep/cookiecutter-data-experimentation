@@ -59,5 +59,6 @@ git push -u origin main
 ```
 
 # To run pre-commit (after link to git)
-1. `pre-commit install --hook-type commit-msg --hook-type pre-push`
-2. `pre-commit run --all-files`
+1. `git remote set-head origin main`
+2. `pre-commit install --hook-type commit-msg --hook-type pre-push`
+3. `pre-commit run --all-files`
