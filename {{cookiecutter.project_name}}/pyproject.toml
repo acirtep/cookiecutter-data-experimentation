@@ -10,10 +10,10 @@ packages = [
 
 
 [tool.poetry.dependencies]
-python = "^3.11"
-streamlit = "^1.20.0"
-plotly = "^5.14.0"
-duckdb = "^0.7.1"
+python = ">=3.11,<4.0.0"
+streamlit = "^1.31.1"
+plotly = "^5.18.0"
+duckdb = "^0.10.0"
 
 
 [tool.poetry.group.dev.dependencies]

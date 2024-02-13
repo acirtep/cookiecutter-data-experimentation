@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "cookiecutter_data_experimentation"}]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<4.0.0"
 cookiecutter = "^2.1.1"
 
 
