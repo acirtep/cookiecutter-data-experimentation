@@ -2,9 +2,9 @@
   "author": "",
   "full_name": "",
   "email": "",
-  "project_name": "",
+  "project_name": "Your project name with -",
   "project_description": "",
-  "project_slug": "",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "docker_service_name": "{{cookiecutter.project_slug}}_service",
   "docker_container_name": "{{cookiecutter.project_slug}}_container",
   "streamlit_port_no": "8501"
